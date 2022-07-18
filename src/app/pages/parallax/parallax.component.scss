@@ -1,0 +1,125 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(242, 242, 245, 0),
+    rgba(28, 28, 28, 0.96)
+  ), url("../../../assets/banners/pies.jpg");
+  filter: blur(0 );
+
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  section {
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  &__parallax-bg {
+    transform: translateZ(-0.5px);
+    z-index: -1;
+    height: 50vh;
+
+    &--header {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background: linear-gradient(
+          to right bottom,
+          rgba(241, 244, 241, 0.702),
+          rgba(87, 89, 87, 0.8)
+        ),
+        url("../../../assets/banners/geografia.jpeg");
+    }
+    &--dos {
+      background-position: 0% 80% !important;
+      background:   
+        url("../../../assets/banners/empatía animal.jpeg");
+    }
+    &--tres {
+      background-position: center center;
+      background: linear-gradient(
+          to right bottom,
+          rgba(245, 247, 245, 0.702),
+          rgba(61, 62, 61, 0.8)
+        ),
+        url("../../../assets/banners/geografia.jpeg");
+    }
+
+    &--cuatro {
+      background-position: center center;
+      background: linear-gradient(
+          to right bottom,
+          rgba(245, 247, 245, 0.702),
+          rgba(61, 62, 61, 0.8)
+        ),
+        url("../../../assets/banners/plazasanartin.jpg");
+    }
+  }
+  &__parallax-content {
+    z-index: -1;
+    transform: translateY(-25vh) translateZ(0px) scale(1);
+    text-align: center;
+
+    
+  }
+  &__no-parallax-content {
+    text-align: center;
+    padding: 10%;
+    font-size: 1.5em;
+    display: felx;
+    flex-wrap: nowrap;
+
+  }
+  &__no-parallax-section {
+    height: 50em;
+
+  }
+}
+
+/*Colores de fondo*/
+.bg-1 {
+  background: black;
+}
+.bg-2 {
+  background: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.__href{
+  color: white;
+}
+
+.ptitle{
+  font-size: 50px;
+  font-family: Impact,sans-serif;
+  text-shadow: 5px 5px 10px rgba(black, 0.95);
+}
+.a {
+  margin: 8px 8px 8px 0;
+  display: table-cell;
+  width: 490px;
+  display: table-cell;
+  width: 490px;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+  color: rgb(245, 3, 72);
+}
+.pcimg {
+  font-size: 50px;
+  font-family: Impact,sans-serif;
+  text-shadow: 5px 5px 10px rgba(black, 0.95);
+}

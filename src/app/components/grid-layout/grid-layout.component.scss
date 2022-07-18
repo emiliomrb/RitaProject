@@ -1,0 +1,227 @@
+@import "../../styles/abstract/variables";
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(8, 3vw);
+  grid-gap: 20px;
+  padding: 30px;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__item {
+    position: relative;
+    cursor: pointer;
+    &--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      z-index: 10;
+
+      &:hover + div {
+        filter: brightness(100%);
+        animation: backgroundAnimation;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+        animation-iteration-count: 3;
+        animation-duration: 20s;
+      }
+      &:hover ~ .gallery__item--content {
+        // p {
+        //   transform: translateX(20%) scale(1.2);
+        //   backdrop-filter: blur(1px);
+        //   color: white;
+        //   padding: 2px 5px;
+        //   text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+        //   z-index: 1;
+        // }
+      }
+    }
+    &--bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+      //filter: grayscale(1) contrast(20);
+    }
+    &--content {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      p {
+        color: white;
+        text-transform: uppercase;
+        font-family: $font-koulen;
+        font-size: 2rem;
+        width: 50%;
+        transition: all 0.7s;
+      }
+    }
+    &--1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      &-bg {
+        background: url("../../../assets/banners/fondo.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--2 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 6;
+      &-bg {
+        background: url("../../../assets/banners/dino.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--3 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 6;
+
+      &-bg {
+        background: url("../../../assets/banners/ciudadania.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--4 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 9;
+
+      &-bg {
+        background: url("../../../assets/banners/periferias.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--5 {
+      grid-column-start: 3;
+      grid-column-end: 9;
+      grid-row-start: 6;
+      grid-row-end: 9;
+
+      &-bg {
+        background: url("../../../assets/banners/geografia.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    // &--6 {
+    //   grid-column-start: 5;
+    //   grid-column-end: 9;
+    //   grid-row-start: 6;
+    //   grid-row-end: 9;
+
+    // }
+    &--7 {
+      grid-column-start: 9;
+      grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 3;
+
+      &-bg {
+        background: url("../../../assets/banners/hormiga2.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--8 {
+      grid-column-start: 12;
+      grid-column-end: 17;
+      grid-row-start: 1;
+      grid-row-end: 6;
+      &-bg {
+        background: url("../../../assets/banners/casa-1.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--9 {
+      grid-column-start: 9;
+      grid-column-end: 12;
+      grid-row-start: 3;
+      grid-row-end: 9;
+      &-bg {
+        background: url("../../../assets/banners/geografia.jpeg");
+        background-size: 160%;
+        //background-position: center;
+        background-size: cover;
+        // animation: backgroundAnimation;
+        // animation-fill-mode: both;
+        // animation-timing-function: linear;
+        // animation-iteration-count: 3;
+        // animation-duration: 20s;
+      }
+    }
+    &--10 {
+      grid-column-start: 12;
+      grid-column-end: 14;
+      grid-row-start: 6;
+      grid-row-end: 9;
+
+      &-bg {
+        background: url("../../../assets/banners/canasto.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--11 {
+      grid-column-start: 14;
+      grid-column-end: 17;
+      grid-row-start: 6;
+      grid-row-end: 9;
+      &-bg {
+        background: black;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &--12 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 6;
+      grid-row-end: 9;
+
+      &-bg {
+        background: url("../../../assets/banners/COLECTIVA3.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+@keyframes backgroundAnimation {
+  1% {
+    background-size: 161%;
+    background-position: center center;
+  }
+  50% {
+    background-position: left center;
+    background-size: 250%;
+  }
+  100% {
+    background-position: right center;
+    background-size: 160%;
+  }
+}

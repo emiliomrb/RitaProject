@@ -1,0 +1,39 @@
+a,
+a:hover,
+a:link {
+  text-decoration: none;
+}
+
+.btn-article-link {
+  color: #2e4f84;
+  transition: 0.5s;
+  position: relative;
+  &::before {
+    content: "";
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #3d3d3d;
+    transition: 0.7s;
+  }
+  &:hover {
+    color: #5880c1;
+    &::before {
+      width: 100%;
+      background-color: #5880c1;
+    }
+  }
+  &--l {
+    padding: 5px 10px;
+    margin: 5px auto;
+    font-size: 2.5rem;
+    &::before {
+      left: 11px;
+    }
+    &:hover::before {
+      width: calc(100% - 20px);
+    }
+  }
+}
