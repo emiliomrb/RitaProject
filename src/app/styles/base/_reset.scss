@@ -26,3 +26,9 @@ html {
     font-size: 75%; //1rem = 12px ; 12/16= 75%
   }
 }
+a,
+a:hover,
+a:link {
+  text-decoration: none;
+  color: currentColor;
+}
