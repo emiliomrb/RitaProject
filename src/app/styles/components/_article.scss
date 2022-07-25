@@ -1,5 +1,6 @@
 @import "../base/typography";
 @import "./btns";
+
 .article {
   &__header {
     background-position: center;
@@ -9,12 +10,12 @@
     padding: 0 30px;
   }
   &__transition {
-    background-color: black;
+    background-color: #326789;
     font-family: Impact, sans-serif;
     min-height: 18em;
     padding: 20px;
     &--quote {
-      color: white;
+      color: #E9EEF2;
       font-size: 36px;
       font-family: $font-gill;
       text-align: center;
@@ -24,7 +25,8 @@
     }
   }
   &__content {
-    padding: 40px 10%; //top y bottom - right y left
+    padding: 40px 10%; //top y bottom - right y left 
+    background-color: #E9EEF2;
     &--paragraph {
       text-align: justify;
       display: block;
@@ -38,4 +40,7 @@
       font-family: $font-gill;
     }
   }
+}
+.title-secondary{
+  color: #E65C4F;
 }

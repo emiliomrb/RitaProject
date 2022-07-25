@@ -1,7 +1,9 @@
 .cover-page {
-    background-image: url("/../../../assets/banners/cofico.jpeg");
+    // background:
+    //  url("/../../../assets/banners/cofico.jpeg") ;
+    background-color: #E65C4F;
     background-size:cover;
-    height: 30em;   
+    height: 15em;   
     background-position: top !important;
     
 }
@@ -24,6 +26,7 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
+    background-color: #E9EEF2;
 }
 .mb-5 {
     margin-bottom: 3rem!important;
@@ -56,24 +59,29 @@ h1, h2{
 }
 
 .transition {
-    background-color: black;
+    background-color: #326789;
     font-family: Impact, sans-serif;
     height: 18vh;
 }
+.trans2{
+    font-family: Impact, sans-serif;
+    height: 9vh;
+    background-color: #326789;
+ 
+}
 
 .quote {
-    color: white;
+    color: #E9EEF2;
     font-size: 42px;
     font-family: Impact,sans-serif;
     line-height: 40px;
     text-align: left;
-    padding-top: 2%;
-    padding-left: 2%;
+    padding-left: 10%;
     padding-right: 20%;
 
   }
   .header-title{
-    color: black;
+    color: #E9EEF2;
     font-size: 36px;
     font-family: Impact,sans-serif;
     line-height: 40px;
@@ -83,6 +91,7 @@ h1, h2{
     padding-right: 20%;
   }
   h1 {
+      color: #E65C4F;
     font-size: 36px;
     line-height: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-recorrido-fotografico',
   templateUrl: './recorrido-fotografico.component.html',
-  styleUrls: ['./recorrido-fotografico.component.scss']
+  styleUrls: ['../../styles/components/_article.scss'],
 })
 export class RecorridoFotograficoComponent implements OnInit {
 
@@ -11,5 +11,9 @@ export class RecorridoFotograficoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  backgroundImageHeader: { backgroundImage: string } = {
+    backgroundImage:
+      'url("/../../../assets/banners/grafitis.jpeg")',
+  };
 
 }

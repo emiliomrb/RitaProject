@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciudadanias</title>
-</head>
-<body>
-    <div class="cover-page position-relative">
-        <app-nav-bar></app-nav-bar>
-        <div class="col-2">
-                       
-        </div>
-        
-        
-    </div>
-    <div class="transition">
-        <h1 class="title">Inspiraciones</h1> 
-    </div>
+<div class="article">
 
-    <div class="general-articles">
-        <div class="row justify-content-between max-content-width">
-            <article>
-                <h1> Espacios públicos desde la lente de fotógrafes</h1>
-                <p>En esta sección te invitamos a que te inspires observando las obras de grandes artistas que fotografiaron e intervinieron imágenes de ciudades y espacios públicos alrededor del mundo y en distintos contextos históricos. </p>
-            </article> 
-            <h1><a href="laso">José Domingo Laso: la ciudad de Quito, Ecuador a principios del siglo XX</a></h1>
-            <h1><a href="wolf">Michael Wolf: París, Hong Kong: composiciones de ciudades y ciudadanes</a></h1>
-            <h1><a href="eijkelboom">Hans Eijkelboom: Gente del siglo XXI</a></h1>       
-            
-        </div>
-        
+    <div class="article__transition">
+      <app-nav-bar></app-nav-bar>
+      <h2 class="title-primary">Inspiraciones</h2>
     </div>
-</body>
-</html>
+  
+    <div class="article__content">
+      <article>
+        <h1 class="title-secondary"> Espacios públicos desde la lente de fotógrafes</h1>
+        <p class="article__content--paragraph">
+            En esta sección te invitamos a que te inspires observando las obras de grandes artistas que fotografiaron e intervinieron imágenes de ciudades y espacios públicos alrededor del mundo y en distintos contextos históricos.
+           
+        </p>
+        
+        <p class="article__content--paragraph"><a
+            class="btn-article-link btn-article-link--l"
+            routerLink="/laso"
+            >José Domingo Laso: la ciudad de Quito, Ecuador a principios del siglo XX</a
+            ></p>
+            <p class="article__content--paragraph"><a
+            class="btn-article-link btn-article-link--l"
+            routerLink="/wolf"
+            >Michael Wolf: París, Hong Kong: composiciones de ciudades y ciudadanes</a
+            ></p>
+            <p class="article__content--paragraph"><a
+                class="btn-article-link btn-article-link--l"
+                routerLink="/eijkelboom"
+                >Hans Eijkelboom: Gente del siglo XXI</a
+                ></p>
+      </article>
+    </div>
+  </div>

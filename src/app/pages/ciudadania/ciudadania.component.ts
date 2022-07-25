@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ciudadania',
   templateUrl: './ciudadania.component.html',
-  styleUrls: ['./ciudadania.component.scss']
+  styleUrls: ['../../styles/components/_article.scss']
 })
 export class CiudadaniaComponent implements OnInit {
 
@@ -11,5 +11,9 @@ export class CiudadaniaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  backgroundImageHeader: { backgroundImage: string } = {
+    backgroundImage:
+      'url("/../../../assets/banners/mural_la_lucha_nos_hace_libres.jpeg")',
+  };
 
 }

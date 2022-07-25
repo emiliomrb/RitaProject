@@ -8,7 +8,7 @@
     to right bottom,
     rgba(242, 242, 245, 0),
     rgba(28, 28, 28, 0.96)
-  ), url("../../../assets/banners/pies.jpg");
+  ), url("../../../assets/banners/pies_blur.jpg");
   filter: blur(0 );
 
   
@@ -32,15 +32,19 @@
       background-repeat: no-repeat;
       background-position: center center;
       background: linear-gradient(
-          to right bottom,
-          rgba(241, 244, 241, 0.702),
+          to left right,
+          rgba(241, 244, 241, 0.079),
           rgba(87, 89, 87, 0.8)
         ),
         url("../../../assets/banners/geografia.jpeg");
     }
     &--dos {
       background-position: 0% 80% !important;
-      background:   
+      background: linear-gradient(
+        to left,
+        rgba(79, 81, 79, 0.726),
+        rgba(201, 203, 201, 0.044)
+      ),
         url("../../../assets/banners/empatía animal.jpeg");
     }
     &--tres {
@@ -86,7 +90,7 @@
 
 /*Colores de fondo*/
 .bg-1 {
-  background: black;
+  background: #151515;
 }
 .bg-2 {
   background: black;
@@ -123,3 +127,5 @@
   font-family: Impact,sans-serif;
   text-shadow: 5px 5px 10px rgba(black, 0.95);
 }
+
+

@@ -1,40 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciudadanias</title>
-</head>
-<body>
-    <div class="cover-page position-relative">
-        <app-nav-bar></app-nav-bar>
-        <div class="col-2">
-            <h1 class="title">Ciudadanías</h1>            
-        </div>
+<div class="article">
+    <div class="article__header" [ngStyle]="backgroundImageHeader">
+      <app-nav-bar></app-nav-bar>
+      <div>
         
-        
+      </div>
     </div>
-    <div class="transition">
-        <p class="quote">"Las acciones propias de les ciudadanes son solo aquellas que tienden a mantener, y de ser posible, incrementar el ejercicio futuro de la ciudadania." </p>
-        <p class="quote">Elizabeth Jelin</p>
+    <div class="article__transition">
+        <h2 class="title-primary">Ciudadanías</h2>
     </div>
-    <div class="general-articles">
-        <div class="row justify-content-between max-content-width">
-            <article>
-                <h1>¿Que es la ciudadanía?</h1>
-                <p>La ciudadanía se relaciona con los derechos y las responsabilidades que las personas tenemos en el marco de una comunidad determinada. Puede entenderse como una práctica conflictiva vinculada al poder, que refleja las luchas acerca de quiénes podrán participar en el proceso de definir cuáles son los problemas comunes y cómo serán abordados. Esto implica la construcción de una comunidad con miembros plenos cuyas acciones tienden a mantener y, de ser posible, incrementar, el ejercicio futuro de la ciudadanía. En esta línea, es importante que les ciudadanes se perciban como sujetos de derecho, pero que también reconozcan y promuevan la ampliación del sentido de la responsabilidad y las prácticas ciudadanas colectivas.</p>
-                <p> Otro aspecto central en la definición de la ciudadanía tiene que ver con el reconocimiento que se les da a les ciudadanes en el marco de la participación ciudadana, tanto por conformidad, es decir, a partir de recibir un trato igualitario, por su condición de igualdad con otres, como por distinción, donde se reconozca la especificidad de los individuos. Es decir, la participación en la vida comunitaria es independiente de cualquier otra característica de las personas (sexo o género, etnicidad, creencia religiosa o política, situación económica, identidad cultural), aunque teniendo presente sus singularidades. Es en el encuentro con las otredades donde se define nuestro ser moral y donde aparece nuestra responsabilidad.</p>
-                <p>Si te interesa aprender más sobre experiencias y luchas ciudadanas en la actualidad, te invitamos a visitar el sitio <a href="http://ciudadaniasactivas.com/">Ciudadanías Activas</a></p>
-            </article> 
-            <h1>Seguí leyendo...</h1>
-            <h1><a href='la-dimension-espacial-de-la-ciudadania'>La dimensión espacial de la ciudadanía</a></h1>
-            <h1><a href="la-ciudadania-y-los-derechos-humanos">La ciudadanía y los Derechos Humanos como procesos históricos</a></h1>  
-
+    <div class="article__content">
+      <article>
+        <h1 class="title-secondary">
+            ¿Que es la ciudadanía?
+        </h1>
+        <p class="article__content--paragraph">
+          La ciudadanía se entiende como una práctica conflictiva vinculada a las relaciones de poder que reflejan las luchas —actuales e históricas— acerca de las demandas comunes. Supone la construcción de una comunidad que apunta a garantizar la plenitud ciudadana de todos sus miembros, esto es, el incremento de derechos y el ejercicio futuro de la ciudadanía. Es importante destacar que la definición sobre quiénes son las personas reconocidas como ciudadanes depende de los contextos históricos y las relaciones de fuerza entre los distintos actores políticos que participan del juego democrático, por esto decimos que se trata siempre de prácticas conflictivas. Un ejemplo claro de esto resulta de la larga historia de exclusión política de las mujeres, que en el caso de Argentina recién pudieron acceder al voto en el año 1951.
+        </p>
+        <p class="article__content--paragraph">
+          En esta comunidad les ciudadanes deben percibirse a sí mismes y a les otres como sujetos de derecho. En este sentido, todes son iguales ante la ley y su participación en la vida comunitaria es independiente de cualquier otra característica de sexo o género, etnicidad, creencia religiosa o política, situación económica, identidad cultural. Es en el encuentro con las otredades donde se definen las responsabilidades ciudadanas. 
+        </p>
         
-            
-        </div>
-        
+        <p class="article__content--paragraph">
+            Si te interesa aprender más sobre experiencias y luchas ciudadanas en la actualidad, te invitamos a visitar el sitio <a href="http://ciudadaniasactivas.com/"  target="_blank">Ciudadanías Activas</a>
+        </p>
+      </article>
+      <h2>Seguí leyendo...</h2>
+  
+      <a
+        class="btn-article-link btn-article-link--l"
+        routerLink="/la-ciudadania-y-los-derechos-humanos"
+        >La ciudadanía y los Derechos Humanos como procesos históricos</a
+      >
     </div>
-</body>
-</html>
+  </div>
+  

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-wolf',
   templateUrl: './wolf.component.html',
-  styleUrls: ['./wolf.component.scss']
+  styleUrls: ['../../styles/components/_article.scss'],
 })
 export class WolfComponent implements OnInit {
 
@@ -11,5 +11,9 @@ export class WolfComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  backgroundImageHeader: { backgroundImage: string } = {
+    backgroundImage:
+      'url("/../../../assets/banners/back_door_05.jpg")',
+  };
 
 }

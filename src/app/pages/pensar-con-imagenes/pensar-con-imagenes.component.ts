@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-pensar-con-imagenes',
   templateUrl: './pensar-con-imagenes.component.html',
-  styleUrls: ['./pensar-con-imagenes.component.scss']
+  styleUrls: ['../../styles/components/_article.scss'],
 })
 export class PensarConImagenesComponent implements OnInit {
 
@@ -11,5 +11,8 @@ export class PensarConImagenesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  backgroundImageHeader: { backgroundImage: string } = {
+    backgroundImage: 'url("/../../../assets/banners/027.jpg")',
+  };
 
 }
