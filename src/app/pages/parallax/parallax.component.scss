@@ -5,15 +5,26 @@
   overflow-y: auto;
   perspective: 3px;
   background: linear-gradient(
-    to right bottom,
-    rgba(242, 242, 245, 0),
-    rgba(28, 28, 28, 0.96)
-  ), url("../../../assets/banners/pies_blur.jpg");
-  filter: blur(0 );
-
-  
+      to right bottom,
+      rgba(242, 242, 245, 0),
+      rgba(28, 28, 28, 0.96)
+    ),
+    url("../../../assets/banners/pies_blur.jpg");
+  filter: blur(0);
   background-repeat: no-repeat;
   background-size: cover;
+  &__content {
+    display: flex;
+    @media all and (max-width: 600px) {
+      flex-direction: column;
+    }
+    &--item {
+      margin: 0 10px;
+      @media all and (max-width: 600px) {
+        margin: 10px auto;
+      }
+    }
+  }
   section {
     background-size: cover;
     color: white;
@@ -41,10 +52,10 @@
     &--dos {
       background-position: 0% 80% !important;
       background: linear-gradient(
-        to left,
-        rgba(79, 81, 79, 0.726),
-        rgba(201, 203, 201, 0.044)
-      ),
+          to left,
+          rgba(79, 81, 79, 0.726),
+          rgba(201, 203, 201, 0.044)
+        ),
         url("../../../assets/banners/empatía animal.jpeg");
     }
     &--tres {
@@ -71,8 +82,6 @@
     z-index: -1;
     transform: translateY(-25vh) translateZ(0px) scale(1);
     text-align: center;
-
-    
   }
   &__no-parallax-content {
     text-align: center;
@@ -80,11 +89,9 @@
     font-size: 1.5em;
     display: felx;
     flex-wrap: nowrap;
-
   }
   &__no-parallax-section {
     height: 50em;
-
   }
 }
 
@@ -102,13 +109,13 @@
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
-.__href{
+.__href {
   color: white;
 }
 
-.ptitle{
+.ptitle {
   font-size: 50px;
-  font-family: Impact,sans-serif;
+  font-family: Impact, sans-serif;
   text-shadow: 5px 5px 10px rgba(black, 0.95);
 }
 .a {
@@ -124,8 +131,6 @@
 }
 .pcimg {
   font-size: 50px;
-  font-family: Impact,sans-serif;
+  font-family: Impact, sans-serif;
   text-shadow: 5px 5px 10px rgba(black, 0.95);
 }
-
-
