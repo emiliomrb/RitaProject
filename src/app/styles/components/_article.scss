@@ -25,7 +25,7 @@
     }
   }
   &__content {
-    padding: 40px 10%; //top y bottom - right y left 
+    padding: 5% 10%; //top y bottom - right y left 
     background-color: #E9EEF2;
     &--paragraph {
       text-align: justify;
@@ -34,7 +34,7 @@
       margin-inline-start: 0px;
       margin-inline-end: 0px;
       color: #404040;
-      font-size: 30px;
+      font-size: 2rem;
       font-weight: 300;
       line-height: 1.5;
       font-family: $font-gill;

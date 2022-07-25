@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { CiudadaniaComponent } from './pages/ciudadania/ciudadania.component';
 import { EspacioComponent } from './pages/espacio/espacio.component';
 import { EspacioPublicoComponent } from './pages/espacio-publico/espacio-publico.component';
-import { LaDimensionEspacialDeLaCiudadaniaComponent } from './pages/la-dimension-espacial-de-la-ciudadania/la-dimension-espacial-de-la-ciudadania.component';
 import { SobreElSitioComponent } from './pages/sobre-el-sitio/sobre-el-sitio.component';
 import { LaCiudadaniaYLosDerechosHumanosComponent } from './pages/la-ciudadania-y-los-derechos-humanos/la-ciudadania-y-los-derechos-humanos.component';
 import { UnEspacioYUnaDemocraciaPorConstruirComponent } from './pages/un-espacio-y-una-democracia-por-construir/un-espacio-y-una-democracia-por-construir.component';
@@ -37,10 +36,6 @@ const routes: Routes = [
   {
     path: 'sobre-el-sitio',
     component: SobreElSitioComponent,
-  },
-  {
-    path:'la-dimension-espacial-de-la-ciudadania',
-    component: LaDimensionEspacialDeLaCiudadaniaComponent,
   },
   {
     path:'la-ciudadania-y-los-derechos-humanos',
