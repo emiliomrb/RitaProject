@@ -7,7 +7,7 @@
   background: linear-gradient(
       to right bottom,
       rgba(242, 242, 245, 0),
-      rgba(28, 28, 28, 0.96)
+      rgb(28, 28, 28)
     ),
     url("../../../assets/banners/pies_blur.jpg");
   filter: blur(0);
@@ -51,12 +51,8 @@
     }
     &--dos {
       background-position: 0% 80% !important;
-      background: linear-gradient(
-          to left,
-          rgba(79, 81, 79, 0.726),
-          rgba(201, 203, 201, 0.044)
-        ),
-        url("../../../assets/banners/empatía animal.jpeg");
+      background: 
+        url("../../../assets/banners/baldosas_rotas.jpeg");
     }
     &--tres {
       background-position: center center;

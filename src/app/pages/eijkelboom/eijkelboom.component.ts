@@ -13,7 +13,7 @@ export class EijkelboomComponent implements OnInit {
   }
   backgroundImageHeader: { backgroundImage: string } = {
     backgroundImage:
-      'url("../../../assets/banners/eijkelboom.jpg")',
+      'url("../../../assets/banners/HANS_webp.webp")',
   }
 
 }

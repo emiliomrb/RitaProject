@@ -12,7 +12,7 @@ export class PensarConImagenesComponent implements OnInit {
   ngOnInit(): void {
   }
   backgroundImageHeader: { backgroundImage: string } = {
-    backgroundImage: 'url("/../../../assets/banners/027.jpg")',
+    backgroundImage: 'url("/../../../assets/banners/floresyperrito.jpeg")',
   };
 
 }
